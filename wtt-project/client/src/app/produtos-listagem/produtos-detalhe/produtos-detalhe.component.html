@@ -1,0 +1,9 @@
+<h5>Detalhe do Produto</h5>
+
+<p>Codigo: {{ produto.id }}</p>
+<p><b><h5>{{ produto.produto }}</h5></b></p>
+<p>Descrição: {{ produto.descricao }}</p>
+<p>Por apenas R$ {{ produto.preco }}</p>
+
+<a class="btn-floating btn-large waves-effect waves-light blue" (click)="editarProduto()"><i class="material-icons">edit</i></a>
+

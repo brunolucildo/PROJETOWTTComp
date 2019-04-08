@@ -1,0 +1,42 @@
+<h5>Criar/Editar Produto</h5>
+
+<div class="col s12">  
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+  <div class="row">
+    <div class="input-field">
+      <input disabled [(ngModel)]="produto.id" id="codigo" name="codigo" type="text">
+      <label for="codigo" class="active">Codigo</label>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col s8">
+      <div class="input-field">
+        <input [(ngModel)]="produto.nome" id="produto" name="produto" type="text" class="validate">
+        <label for="produto" class="active">Produto</label>
+      </div>
+    </div>
+
+    <div class="col s4">
+      <div class="input-field">
+        <input [(ngModel)]="produto.preco" id="preco"  name="preco" type="text" class="validate">
+        <label for="preco" class="active">Preço</label>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="input-field">
+      <input [(ngModel)]="produto.descricao" id="descricao" name="descricao" type="text" class="validate" ngModel>
+      <label for="descricao" class="active">Descrição</label>
+    </div>
+  </div>
+
+
+</form>
+
+</div>
